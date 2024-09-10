@@ -51,16 +51,14 @@ def add_user_bookmarks(user_id, page_book):
         cursor.execute('INSERT INTO UsersBookmarks (id, bookmark) VALUES (?, ?)', (user_id, page_book))
 
 
-with sq.connect('users.db') as con:
-    cursor = con.cursor()
+with sq.connect('users.db') as conn:
+    cursorN = conn.cursor()
 
-    cursor.execute('''CREATE TABLE IF NOT EXISTS Users (id INTEGER PRIMARY KEY, page INTEGER)''')
+    cursorN.execute('''CREATE TABLE IF NOT EXISTS Users (id INTEGER PRIMARY KEY, page INTEGER)''')
 
-    cursor.execute('''CREATE TABLE IF NOT EXISTS UsersBookmarks (id INTEGER, bookmark INTEGER)''')
+    cursorN.execute('''CREATE TABLE IF NOT EXISTS UsersBookmarks (id INTEGER, bookmark INTEGER)''')
 
-    cursor.execute('''INSERT INTO Users (id, page) VALUES (12, 2)''')
-
-    con.commit()
+    conn.commit()
 
 
 

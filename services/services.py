@@ -1,4 +1,4 @@
-BOOK_PATH = 'C:/Users/user/my_telegram_bot/book/Bredberi_Marsianskie-hroniki.txt'
+BOOK_PATH = 'C:/Users/Администратор/PycharmProjects/bot_book/book.txt'
 PAGE_SIZE = 1050
 
 
