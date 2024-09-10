@@ -1,4 +1,4 @@
-BOOK_PATH = 'C:/Users/Администратор/PycharmProjects/bot_book/book.txt'
+BOOK_PATH = 'book.txt'
 PAGE_SIZE = 1050
 
 
